@@ -1,7 +1,7 @@
 # Contador De Piscadas
 ![Gif](https://github.com/AntonioABLima/Contador-De-Piscadas/blob/main/Media/MainGif.gif?raw=true)
 
-Este é um projeto de um contador de piscadas usando análise de imagem implementado em Python. O objetivo é detectar o número de piscadas de olhos de uma pessoa a partir de uma imagem, vídeo ou qualquer tipo de media visual. Isso pode ser útil em diversas aplicações, como monitoramento de fadiga, análise de atenção e até mesmo para aprimorar experiências de realidade virtual. 
+Este é um projeto de um contador de piscadas usando análise de imagem implementado em Python. O objetivo é detectar o número de piscadas de olhos de uma pessoa a partir de uma imagem, vídeo ou qualquer tipo de mídia visual. Isso pode ser útil em diversas aplicações, como monitoramento de fadiga, análise de atenção e até mesmo para aprimorar experiências de realidade virtual, no meu caso utilizei para confirmar se o título do Orochinho de Pisca é merecido ou não.
 
 ## Requisitos
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
