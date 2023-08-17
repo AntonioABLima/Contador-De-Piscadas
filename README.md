@@ -9,6 +9,8 @@ Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
 ## Funcionamento
 O funcionamento do contador de piscadas com análise de imagem utilizando Python, OpenCV e Mediapipe baseia-se na detecção precisa dos pontos faciais associados aos olhos em uma imagem de vídeo em tempo real. Através da combinação dessas bibliotecas, o sistema é capaz de identificar os contornos dos olhos e calcular a relação de aspecto dos mesmos. Essa relação é utilizada como um indicador para determinar se um piscar de olhos ocorreu. Quando a relação de aspecto dos olhos cai abaixo de um certo limiar, o sistema registra uma piscada e incrementa o contador correspondente. 
+### Observação
+O código foi ajustado para vídeos de 1920x1080 gravados em 25fps.
 
 ## Código:
 ```python
