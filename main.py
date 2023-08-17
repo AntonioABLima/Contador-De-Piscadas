@@ -10,7 +10,7 @@ def _map(x, in_min, in_max, out_min, out_max):
 def main():
     mp_face_mesh = mp.solutions.face_mesh
 
-    cap = cv2.VideoCapture(0)
+    # cap = cv2.VideoCapture(0)
     # cap = cv2.VideoCapture('example.mp4')
 
     cap.set(cv2.CAP_PROP_FPS, 25.0)
@@ -63,11 +63,11 @@ def main():
                 ratios.pop(0)
 
             mediaRatio =  np.mean(ratios)
+
             ratioMapped = _map(mediaRatio, 0, 40, 40, 0)
 
             if(ratioMapped < 15 and piscando == False):
                 blinkCount += 1
-                print(ratioMapped)
                 piscando = True
 
             if(ratioMapped >= 18 and piscando == True):
