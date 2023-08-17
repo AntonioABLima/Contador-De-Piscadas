@@ -103,4 +103,4 @@ def main():
 main()
 ```
 ### Vídeo do Projeto
-*   [YouTube](https://www.youtube.com/c/MediaPipe](https://youtu.be/iftimDe8hzA)https://youtu.be/iftimDe8hzA)
+*   [YouTube](https://youtu.be/iftimDe8hzA)
