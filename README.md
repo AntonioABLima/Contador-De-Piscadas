@@ -5,7 +5,7 @@ Este é um projeto de um contador de piscadas usando análise de imagem implemen
 
 ## Requisitos
 Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
-- Python (versão 3.6 ou superior
+- Python (versão 3.6 ou superior)
 - Bibliotecas: OpenCV (cv2) e Media Pipe (mediapipe)
 
 ## Funcionamento
