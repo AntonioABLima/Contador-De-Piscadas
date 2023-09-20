@@ -10,7 +10,7 @@ def _map(x, in_min, in_max, out_min, out_max):
 def main():
     mp_face_mesh = mp.solutions.face_mesh
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 
     cap.set(cv2.CAP_PROP_FPS, 25.0)
     width = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
@@ -42,8 +42,9 @@ def main():
 
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-
-            face_landmarks = results.multi_face_landmarks[0].landmark
+            
+            if(results.multi_face_landmarks):
+                face_landmarks = results.multi_face_landmarks[0].landmark
                 
             cord1 = _normalized_to_pixel_coordinates(
                 face_landmarks[159].x, 
@@ -122,4 +123,5 @@ def main():
         
     cap.release()
 
-main()
+if __name__ == '__main__':
+    main()
