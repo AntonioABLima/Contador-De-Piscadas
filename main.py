@@ -73,7 +73,7 @@ def main():
             dist = math.sqrt((cord1[0] - cord2[0])**2 + (cord1[1] - cord2[1])**2)
             dist2 = math.sqrt((cord4[0] - cord3[0])**2 + (cord4[1] - cord3[1])**2)
 
-            ratio = (dist2 / dist)
+            ratio = (dist2 / (dist+0.001))
             ratios.append(ratio)
 
             if len(ratios) == 5:
